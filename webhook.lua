@@ -1,8 +1,5 @@
 local HTTPService = game:GetService("HttpService")
-local Players = game:GetService("Players")
-local TeleportService = game:GetService("TeleportService")
-
-local DiscordHook = script.webhookURL.Value
+local webhookURL = script.webhookURL.Value
 
 
 game.Players.PlayerAdded:Connect(function(Player)
@@ -30,7 +27,7 @@ game.Players.PlayerAdded:Connect(function(Player)
 
 			MessageData = HTTPService:JSONEncode(MessageData)
 			local Success, Error = pcall(function()
-				HTTPService:PostAsync(DiscordHook, MessageData)
+				HTTPService:PostAsync(webhookURL, MessageData)
 			end)
 
 			if not Success then
