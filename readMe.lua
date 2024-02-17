@@ -1,0 +1,1 @@
+--D&R is an easly customizeable way to send webhook messages to a Discord server from Roblox. For more info, use these links: https://discord.com/developers/docs/resources/webhook and https://create.roblox.com/docs/en-us/reference/engine/classes/HttpService
